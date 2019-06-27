@@ -1,0 +1,27 @@
+{
+    "presets": [
+        ["@babel/preset-env", {
+            "modules": false,
+            "targets": {
+                // "browsers": ["> 1%", "last 2 versions", "not ie < 11"],
+                "chrome": "58",
+                "ie": "11",
+                "safari": "tp"
+            },
+            "useBuiltIns": "usage",
+            "corejs": 3 //不配置会有警告 https://blog.csdn.net/kai_vin/article/details/88700181
+        }]
+    ],
+    "plugins": [
+        "@babel/plugin-transform-runtime", ["@babel/plugin-proposal-pipeline-operator", {
+            "proposal": "minimal",
+            "corejs": 3
+        }],
+        "@babel/plugin-syntax-dynamic-import", ["@babel/plugin-proposal-decorators", {
+            "legacy": true
+        }],
+        ["@babel/plugin-proposal-class-properties", {
+            "loose": false
+        }]
+    ]
+}

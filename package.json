@@ -1,0 +1,54 @@
+{
+    "name": "pigui",
+    "version": "1.0.0",
+    "description": "> A Vue.js project",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "webpack-dev-server  --inline --progress --config webpack.dev.config.js",
+        "build:dev": "webpack  --progress --config webpack.dev.config.js",
+        "build:prod": "webpack  --progress --config webpack.pro.config.js",
+        "build:vue": "webpack --progress --config webpack.vue.router.vuex.js",
+        "build:all": "npm run build:vue&&npm run build:prod"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/renboen/pigui.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/renboen/pigui/issues"
+    },
+    "homepage": "https://github.com/renboen/pigui#readme",
+    "dependencies": {
+        "core-js": "^3.1.4",
+        "vue": "^2.6.8"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.4.5",
+        "@babel/plugin-proposal-class-properties": "^7.4.4",
+        "@babel/plugin-proposal-decorators": "^7.4.4",
+        "@babel/plugin-proposal-pipeline-operator": "^7.3.2",
+        "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+        "@babel/plugin-transform-runtime": "^7.4.4",
+        "@babel/preset-env": "^7.4.5",
+        "autoprefixer": "^9.6.0",
+        "babel-loader": "^8.0.6",
+        "clean-webpack-plugin": "^3.0.0",
+        "copy-webpack-plugin": "^5.0.3",
+        "css-loader": "^3.0.0",
+        "html-webpack-plugin": "^3.2.0",
+        "sass": "^1.22.1",
+        "sass-loader": "^7.1.0",
+        "url-loader": "^2.0.1",
+        "vue-loader": "^15.7.0",
+        "vue-style-loader": "^4.1.2",
+        "vue-template-compiler": "^2.6.8",
+        "webpack": "^4.35.0",
+        "webpack-cli": "^3.3.5",
+        "webpack-dev-server": "^3.7.2",
+        "webpack-merge": "^4.2.1"
+    }
+}
